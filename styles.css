@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&family=Londrina+Shadow&family=Londrina+Solid:wght@100&family=Roboto+Condensed&family=Space+Mono&display=swap");
+
+body {
+font: normal normal 13px/16px "Roboto Condensed", sans-serif;
+background: #000000;
+}
+
+.container {
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 40px;
+background: rgb(209, 231, 251);
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input {
+padding: 4px 15px 4px 5px
+}
+
+#button {
+display: inline-block;
+background-color:#6504f7;
+color:#ffffff;
+border-radius: 25px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+#button:hover {
+cursor: pointer;
+opacity: .75;
+color: aqua;
+}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+ol li:nth-child(even){background: #ffffff;}
+
+li:hover{
+  cursor: pointer;
+ }
+
+.delete {
+	display: none;
+}
+
+li > deleteButton {
+	background: none;
+	border: none;
+	float: right;
+	color: #000000;
+	font-weight: 800;
+}
+
+.strike{text-decoration: line-through;}

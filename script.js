@@ -9,18 +9,25 @@ function newItem() {
         $('#list').append(li);
     }
     
-    function strikeThrough() {
+    li.on('dblclick', function strikeThrough() {
         li.toggleClass('strike');
-    }
-        li.on('dblclick', strikeThrough);
+    });
+    
 
     let deleteButton = $('<deleteButton> X<deleteButton>')
     li.append(deleteButton);
-    
     deleteButton.on('click', deleteListItem);
+        
     function deleteListItem() {
-        li.addClass('delete');
+            li.addClass('delete');
     }
-
+    
     $('#list').sortable();
-};
+}
+
+    $('#input').keydown(function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          newItem();
+        }
+    });
